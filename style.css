@@ -7,6 +7,10 @@
     position: relative;
 }
 
+[class*="col-"].double-height {
+    height: 100px;
+}
+
 [class*="col-"].has-child {
     height: 80px;
 }
