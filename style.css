@@ -1,0 +1,30 @@
+[class*="col-"] {
+    background-color: #3E6BF3;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+[class*="col-"].has-child {
+    height: 80px;
+}
+
+[class*="col-"] .row {
+    padding: 15px;
+    height: 100%;
+}
+
+[class*="col-"] [class*="col-"] {
+    background-color: #73DB70;
+    border: 1px solid #3E6BF3;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
