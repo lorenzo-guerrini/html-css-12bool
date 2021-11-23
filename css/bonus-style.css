@@ -1,0 +1,232 @@
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+[class*="col-"] {
+    background-color: #3E6BF3;
+    border: 1px solid white;
+    color: white;
+    height: 50px;
+}
+
+.row {
+    transition: 2s;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.row:hover {
+    animation: row-rotation 1s linear infinite;
+    font-size: 0;
+}
+
+.row:active {
+    animation: row-rotation 0.3s linear infinite;
+}
+
+.smile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    transition: 2s;
+    color: black;
+}
+
+.row:hover .smile {
+    font-size: 100px;
+    top: 48.5%;
+}
+
+.row:active .smile {
+    font-size: 300px;
+    color: white;
+}
+
+.row div {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.uno {
+    background-color: red;
+    animation-name: uno-animation;
+}
+
+.due {
+    background-color: orange;
+    animation-name: due-animation;
+}
+
+.tre {
+    background-color: yellow;
+    animation-name: tre-animation;
+}
+
+.quattro {
+    background-color: green;
+    animation-name: quattro-animation;
+}
+
+.cinque {
+    background-color: blue;
+    animation-name: cinque-animation;
+}
+
+.sei {
+    background-color: purple;
+    animation-name: sei-animation;
+}
+
+@keyframes row-rotation {
+    50% {
+        transform: rotate(180deg) scale(200%);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes uno-animation {
+
+    16% {
+        background-color: orange;
+    }
+
+    33% {
+        background-color: yellow;
+    }
+
+    49% {
+        background-color: green;
+    }
+
+    66% {
+        background-color: blue;
+    }
+
+    83% {
+        background-color: purple;
+    }
+}
+
+@keyframes due-animation {
+
+    16% {
+        background-color: yellow;
+    }
+
+    33% {
+        background-color: green;
+    }
+
+    49% {
+        background-color: blue;
+    }
+
+    66% {
+        background-color: purple;
+    }
+
+    83% {
+        background-color: red;
+    }
+}
+
+@keyframes tre-animation {
+
+    16% {
+        background-color: green;
+    }
+
+    33% {
+        background-color: blue;
+    }
+
+    49% {
+        background-color: purple;
+    }
+
+    66% {
+        background-color: red;
+    }
+
+    83% {
+        background-color: orange;
+    }
+}
+
+@keyframes quattro-animation {
+
+    16% {
+        background-color: blue;
+    }
+
+    33% {
+        background-color: purple;
+    }
+
+    49% {
+        background-color: red;
+    }
+
+    66% {
+        background-color: orange;
+    }
+
+    83% {
+        background-color: yellow;
+    }
+}
+
+@keyframes cinque-animation {
+
+    16% {
+        background-color: purple;
+    }
+
+    33% {
+        background-color: red;
+    }
+
+    49% {
+        background-color: orange;
+    }
+
+    66% {
+        background-color: yellow;
+    }
+
+    83% {
+        background-color: green;
+    }
+}
+
+@keyframes sei-animation {
+
+    16% {
+        background-color: red;
+    }
+
+    33% {
+        background-color: orange;
+    }
+
+    49% {
+        background-color: yellow;
+    }
+
+    66% {
+        background-color: green;
+    }
+
+    83% {
+        background-color: blue;
+    }
+}
